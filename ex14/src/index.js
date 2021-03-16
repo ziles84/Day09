@@ -5,12 +5,12 @@ function myForLoop1() {
   for (var i = 0; i < 10; i+=2) {
     evenNumbers += i + ", ";
   }
+  if (evenNumbers.slice(-1) == ' ') {
+        evenNumbers = evenNumbers.slice(0, -2);
+    }
+
   return evenNumbers;
 }
-
-
-
-
 
 
 
@@ -19,6 +19,10 @@ var evenInverseNumbers = "";
 for (var i = 8; i >= 0; i-=2) {
   evenInverseNumbers += i + ", ";
 }
+
+if (evenInverseNumbers.slice(-1) == ' ') {
+      evenInverseNumbers = evenInverseNumbers.slice(0, -2);
+  }
 return evenInverseNumbers;
 
 }
